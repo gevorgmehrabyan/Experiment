@@ -1,0 +1,122 @@
+.arrows_style{
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    position: absolute
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    position: relative
+}
+
+.ant-carousel {
+    height: 100%;
+}
+.slick-slider {
+    height: 100%;
+}
+.slick-dots {
+    position: absolute;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    button{
+        background-color: #929292 !important;
+    }
+    button:hover{
+        background: #929292 !important;
+    }
+    button:active{
+        background-color: #1D1D1D !important;
+    }
+
+    li{
+        height: 8px;
+        width: 8px;
+        margin-right: 16px !important;
+        border-radius: 100px;
+        background: #929292;
+        color: transparent;
+        font-size: 0px;
+        border: 1px solid #0E4272;
+        display: flex !important;
+        align-items: center;
+
+    }
+    li.slick-active button{
+        background-color: #1D1D1D !important;
+    }
+
+    li.slick-active{
+        background-color: #1D1D1D !important;
+    }
+    li:last-child{
+        @media screen and (max-width: 768px) {
+            margin: 0 !important;
+        }
+    }
+    
+    button{
+        padding: 0;
+        height: 8px;
+        width: 8px;
+        border: none;
+        border-radius: 20px;
+        background: #FEFEFE;
+        color: transparent;
+        font-size: 0px;
+        outline: none
+    }
+}
+.slick-list {
+    height: 100%;
+}
+.slick-track {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%
+}
+.slick-slide {
+    div{
+        height: 100%
+    }
+}
+.left_arrow{
+    @extend .arrows_style;
+    background-image: url(../../../Assets/svgs/left.svg);
+    left: 6%;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+.right_arrow{
+    @extend .arrows_style;
+    background-image: url(../../../Assets/svgs/right.svg);
+    left: 92%;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+.banner_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      height: 320px;
+    }
+}
+
+.ant-carousel .slick-dots-bottom{
+    bottom: 24px !important;
+}

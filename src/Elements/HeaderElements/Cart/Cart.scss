@@ -1,0 +1,24 @@
+.cart_icon{
+  width: 34px;
+  display: flex;
+  flex-direction: column;
+  span{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #FFCE31;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #041E42;
+    position: relative;
+    left: 18px;
+    top: 8px;
+  }
+}

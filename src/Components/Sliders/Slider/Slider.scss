@@ -1,0 +1,34 @@
+
+.slider_button{
+    width: 32px;
+    height: 32px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+.slide_wrap{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+i {
+    font-size: 20px;
+    color: #c5c6c6;
+}
+
+.alice-carousel {
+    width: 85%;
+}
+.alice-carousel__stage-item {
+    text-align: center;
+}
+.slider_left_btn{
+    @extend .slider_button;
+    background-image: url(../../../Assets/svgs/slide_left.svg);
+}
+.slider_right_btn{
+    @extend .slider_button;
+    background-image: url(../../../Assets/svgs/slide_right.svg);
+}

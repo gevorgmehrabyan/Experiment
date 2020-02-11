@@ -1,0 +1,12 @@
+.partner_list{
+  max-width: 830px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  img{
+    margin: 0 4px 24px 4px;
+    cursor: pointer;
+  }
+}

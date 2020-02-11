@@ -1,0 +1,38 @@
+
+.romb1{
+  width: 16px;
+  height: 16px;
+  background: white;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 224px;
+  top: -7px;
+}
+
+.title{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #1D1D1D;
+  padding-left: 12px;
+  margin: 16px 0 !important;
+}
+
+.avatar_drop_categ{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #656565;
+    margin-left: 16px;
+  }
+}

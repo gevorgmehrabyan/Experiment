@@ -1,0 +1,49 @@
+.global_wrap{
+  width: 464px;
+}
+ 
+.wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  img{
+    cursor: pointer;
+  }
+  
+  li{
+      height: 100%;
+      border-bottom: 1px solid #B4B4B4;
+  }
+  .alice-carousel{
+    width: 352px !important;
+    height: 100%;
+
+    img{
+      width: 96px;
+      height: 96px;
+      padding: 11px;
+    }
+  }    
+}
+    
+.image_container{
+  width: 464px;
+  height: 464px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 24px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.arrows{
+  fill: #0E4272;
+}

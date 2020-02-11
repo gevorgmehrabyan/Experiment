@@ -1,0 +1,42 @@
+.language_change{
+  a{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+}
+
+.ant-radio-group{
+  width: 180px;
+  height: 140px;
+}
+
+.ant-radio-wrapper{
+  padding-left: 24px;
+  margin: 8px 0;
+}
+
+.ant-radio-wrapper-checked{
+  border-bottom: 1px solid #D5D5D5;
+}
+
+.romb{
+  width: 20px;
+  height: 20px;
+  background: white;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -10px;
+  left: 12px;
+}
+
+.ant-dropdown{
+  margin-top: 10px;
+}
+
+.ant-dropdown-menu{
+  margin-top: 24px;
+}
