@@ -4,7 +4,9 @@ import './Logo.scss';
 
 const Logo = (props) => {
     return(
-        <img src={logo} alt={'logo'} />
+        <a href='#'>
+            <img src={logo} alt={'logo'} />
+        </a>
     )
 }
 

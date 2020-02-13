@@ -18,7 +18,7 @@ const Socials = () => {
         <div className='social_wraper'>
             {
                 siteList.map(item => {
-                  return  <a href={item.url} target={'_blank'}>
+                  return  <a href={item.url} target={'_blank'} rel="noopener noreferrer">
                       <img className='socials' src={item.name} alt={item.name} />
                   </a>
                 })
