@@ -60,7 +60,7 @@ const Registration = (props) => {
                     label="Phone number"
                     className='input_style'
                 />
-                <Button className='btn_style'>Register</Button>
+                <Button>Register</Button>
             </form>
         </div>
     );

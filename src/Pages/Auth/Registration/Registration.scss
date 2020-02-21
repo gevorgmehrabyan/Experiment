@@ -10,7 +10,7 @@
   background-size: cover;
 }
 
-.account_confirmation{
+.registration{
   width: 392px;
   display: flex;
   flex-direction: column;
@@ -36,6 +36,20 @@
       color: #1D1D1D;
     }
   }
+  button:hover{
+    background: #1D1D1D;
+    span{
+      color: #FFFFFF;
+    }
+  }
+
+  button:focus{
+    background: #363636;
+    span{
+      color: #FFFFFF;
+    }
+  }
+
   .input_style{
     width: 100%;
     margin-top: 12px !important;
@@ -72,6 +86,9 @@
     letter-spacing: 0.05em;
     color: #1D1D1D;
     margin: 0 !important;
+    a:hover{
+      text-decoration: underline;
+    }
   }
   h3{
     font-family: Roboto;

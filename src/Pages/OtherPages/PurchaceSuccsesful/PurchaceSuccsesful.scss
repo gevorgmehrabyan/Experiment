@@ -1,0 +1,31 @@
+.purchace_succsesful{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 72px 0 80px;
+  h1{
+    max-width: 500px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    color: #656565;
+    margin: 32px 0 24px;
+  }
+  p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 56px !important;
+    span{
+      font-weight: bold;
+    }
+  }
+}

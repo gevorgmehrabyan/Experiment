@@ -1,0 +1,192 @@
+.contacts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.contacts_container {
+
+  flex-direction: column;
+}
+
+.contacts_top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  h6 {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #1D1D1D;
+    margin: 0 !important;
+    margin-bottom: 16px !important;
+  }
+  p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #1D1D1D;
+    margin-left: 8px;
+  }
+}
+
+
+
+.contacts_top_left {
+  display: flex;
+  flex-direction: column;
+  h4 {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1D1D1D;
+    margin: 0 !important;
+    margin-bottom: 72px !important;
+  }
+
+}
+
+.viber_wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  padding-bottom: 27px;
+  border-bottom: 1px solid #C4C4C4;
+  margin-bottom: 22px;
+  cursor: pointer;
+  p:hover{
+    text-decoration: underline !important;
+  }
+}
+
+.mail_inline {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 38px;
+  align-items: end;
+  cursor: pointer;
+  p:hover{
+    text-decoration: underline !important;
+  }
+}
+
+.contacts_top_right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 6%;
+  border-left: 1px solid #929292;
+}
+
+.contacts_bottom {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #1D1D1D;
+    margin: 0 !important;
+    margin-bottom: 36px !important;
+  }
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    h6 {
+      font-family: Roboto;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 19px;
+      color: #212121;
+      margin: 0 !important;
+      margin-bottom: 8px !important;
+    }
+  }
+
+  div > input:focus {
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  div > input {
+    width: 100%;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #B4B4B4;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 16px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #212121;
+  }
+
+  textarea {
+    width: 100%;
+    height: 280px;
+    background: #FFFFFF;
+    border: 1px solid #B4B4B4;
+    border-radius: 12px;
+    resize: none;
+    padding-left: 16px;
+    padding-top: 16px;
+    outline: none;
+  }
+
+  textarea:focus{
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  p {
+    width: 100%;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #656565;
+    padding-left: 20px;
+    margin-top: 8px;
+  }
+
+  button {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border: 1px solid #041E42;
+    border-radius: 20px;
+    outline: none;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #041E42;
+    background: white;
+    cursor: pointer;
+  }
+  button:hover{
+    background: #041E42;
+    color: #FFFFFF;
+  }
+}
+
+

@@ -30,6 +30,9 @@
     letter-spacing: 0.05em;
     color: #1D1D1D;
     margin: 24px 0 0 0 !important;
+    a:hover{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -76,6 +79,21 @@
     color: #1D1D1D;
   }
 }
+
+.btn_submit:hover{
+  background: #1D1D1D;
+  span{
+    color: #FFFFFF;
+  }
+}
+
+.btn_submit:focus{
+  background: #363636;
+  span{
+    color: #FFFFFF;
+  }
+}
+
 
 
 .forgot_pass{
