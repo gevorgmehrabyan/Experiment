@@ -3,7 +3,7 @@ import React from 'react';
 import './Home.scss';
 //components
 import BannersSlider from "../../Components/Sliders/BannersSlider";
-import Product from "../../Elements/Product/Product";
+import HomeProduct from "../../Elements/HomeProduct/HomeProduct";
 import HomeProducts from "../../Components/HomeProducts/HomeProducts";
 //images
 import Slider from "../../Components/Sliders/Slider";
@@ -49,7 +49,7 @@ function Home() {
         {image: mobile_item, name: 'ADAS 7.84 Dash Cam', price: '$244.45'}
     ];
     const slider = sliderList.map((item, index) => {
-        return <Product key={index} item={item}/>;
+        return <HomeProduct key={index} item={item}/>;
     });
     return (
         <div className='global_page'>

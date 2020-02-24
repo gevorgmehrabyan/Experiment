@@ -1,13 +1,19 @@
 import React from "react";
 import './Product.scss';
+import Stars from "../Stars/Stars";
 
 const Product = (props) => {
     return (
-        <div className='slide_item'>
-            <img src={props.item.image} className="slider" alt={props.item.name}/>
-            <p>{props.item.name}</p>
-            <h3>{props.item.price}</h3>
-        </div>
+        <div className='simple_product'>
+            <img src={props.img} alt={props.name} />
+            <h2>{props.name}</h2>
+            <p>{props.describe}</p>
+            <Stars size={16} count={props.stars}/>
+            <div>
+                <h3>{props.price}</h3>
+                <span>{props.discount}</span>
+            </div>
+        </div>     
     );
 }
 

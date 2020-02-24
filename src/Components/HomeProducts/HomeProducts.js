@@ -1,6 +1,6 @@
 import React from "react";
 import './HomeProducts.scss';
-import Product from "../../Elements/Product/Product";
+import HomeProduct from "../../Elements/HomeProduct/HomeProduct";
 
 const HomeProducts = (props) => {
     return (
@@ -9,7 +9,7 @@ const HomeProducts = (props) => {
             <div className='items_list'>
                 {
                     props.items.map((item, index) => {
-                        return <Product key={index} item={item}/>
+                        return <HomeProduct key={index} item={item}/>
                     })
                 }
             </div>
