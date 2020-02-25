@@ -2,10 +2,10 @@ import React from "react";
 import './Header.scss';
 import Logo from "../../Elements/HeaderElements/Logo/Logo";
 import CategoryDropDown from "../../Elements/HeaderElements/CategoryDropDown/CategoryDropDown";
-import SearchInput from "../../Elements/HeaderElements/Search/Search";
 import LanguageChange from "../../Elements/HeaderElements/LanguageChange/LanguageChange";
 import Avatar from "../../Elements/HeaderElements/Avatar/Avatar";
 import Cart from "../../Elements/HeaderElements/Cart/Cart";
+import SearchInput from "../../Elements/HeaderElements/SearchInput/SearchInput";
 
 const Header = () => {
     return (

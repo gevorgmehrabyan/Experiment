@@ -4,13 +4,13 @@ import './App.css';
 //components
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-import SortBy from "./Elements/SortBy/SortBy";
+import Search from "./Pages/Search/Search";
 
 function App() {
   return (
     <div className='global_page'>
         <Header/>
-        <SortBy/>
+        <Search/>
         <Footer/>
     </div>
   );

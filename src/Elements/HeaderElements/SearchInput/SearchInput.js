@@ -1,5 +1,5 @@
 import React from "react"
-import './Search.scss';
+import './SearchInput.scss';
 import { Input } from 'antd';
 
 const { Search } = Input;

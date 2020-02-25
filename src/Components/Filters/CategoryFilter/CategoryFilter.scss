@@ -1,0 +1,30 @@
+.category_filter{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #B4B4B4;
+  h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin: 0 !important;
+  }
+  p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 20px 0 0 0 !important;
+    color: #000000;
+    cursor: pointer;
+  }
+  p:hover{
+    text-decoration: underline;
+  }
+
+}
