@@ -1,5 +1,7 @@
 import React from "react";
+//styles
 import './Footer.scss';
+//elements
 import Socials from "../../Elements/FooterElements/Socials/Socials";
 import Blocks from "../../Elements/FooterElements/Blocks/Blocks";
 import Partners from "../../Elements/FooterElements/Partners/Partners";

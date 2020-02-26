@@ -1,14 +1,14 @@
 import React from "react";
-import './Chooses.scss';
+import './PurchaseChooses.scss';
 
-const Chooses = () => {
+const PurchaseChooses = (props) => {
     return(
         <div className='feedback_message__list'>
             <a href='#'>Check our latest products</a>
-            <a href='#'>Try what is trending now</a>
+            <a href='#'>Top rated products are waiting for you</a>
             <a href='#'>View your latest orders</a>
         </div>
     );
 }
 
-export default Chooses;
+export default PurchaseChooses;

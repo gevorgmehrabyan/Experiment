@@ -1,6 +1,9 @@
 import React from "react";
+//styles
 import './PurchaceFailed.scss';
-import Chooses from "../../../Elements/Chooses/Chooses";
+//elements
+import PurchaseChooses from "../../../Elements/PurchaseChooses/PurchaseChooses";
+//images
 import failed from '../../../Assets/svgs/failed.svg';
 
 const PurchaceFailed = () => {
@@ -10,7 +13,7 @@ const PurchaceFailed = () => {
             <h1>Oops! Something went wrong</h1>
             <p>We couln’t be able to charge you money.
                 Please ensure that your card is valid or check with your bank.</p>
-            <Chooses/>
+            <PurchaseChooses/>
         </div>
     );
 }

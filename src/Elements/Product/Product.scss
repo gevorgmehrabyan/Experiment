@@ -1,8 +1,23 @@
 .simple_product{
   display: flex;
   flex-direction: column;
-
-  div{
+  .stars_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 24px;
+    p{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      margin: 0 !important;
+      margin-left: 8px!important;
+    }
+  }
+  .price_wrapper{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -16,7 +31,17 @@
       text-decoration-line: line-through;
       color: #B4B4B4;
     }
+    h3{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      color: #1D1D1D;
+      margin: 0 18px 0 0;
+    }
   }
+
 
   h2{
     font-family: Roboto;
@@ -28,16 +53,6 @@
     margin: 24px 0 12px !important;
   }
 
-  h3{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    color: #1D1D1D;
-    margin: 0 18px 0 0;
-  }
-
   p{
     font-family: Roboto;
     font-style: normal;
@@ -45,6 +60,6 @@
     font-size: 14px;
     line-height: 16px;
     color: #000000;
-    margin: 0 0 24px 0 !important;
+    margin: 0 !important;
   }
 }

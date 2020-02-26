@@ -4,7 +4,7 @@ import './Stars.scss';
 
 const Stars = (props) => {
     return(
-        <Rating  style={{fontSize: props.size}} name="half-rating" defaultValue={props.count} precision={0.5} />
+        <Rating style={{fontSize: props.size}} name="half-rating" defaultValue={props.count} precision={0.5} />
     );
 }
 

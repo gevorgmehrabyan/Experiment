@@ -56,7 +56,7 @@ function Home() {
             <BannersSlider />
             <div className='container under_slider'>
                 <HomeProducts title={'For home'} items={homeProdList}/>
-                {/*<HomeProducts title={'For automobiles'} items={autoProdList}/>*/}
+                <HomeProducts title={'For automobiles'} items={autoProdList}/>
                 <HomeProducts title={'Electronics'} items={electProdList}/>
                 <HomeProducts title={'For mobile'} items={mobileProdList}/>
                 <hr className='global_devider1'/>

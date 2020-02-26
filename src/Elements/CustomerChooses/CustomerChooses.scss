@@ -1,7 +1,9 @@
-.feedback_message__list{
+.last_actions {
   display: flex;
   flex-direction: row;
-  a{
+  margin-top: 64px;
+
+  a {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
@@ -9,17 +11,20 @@
     line-height: 21px;
     color: #006EBE;
   }
-  a:nth-child(1){
+
+  a:nth-child(1) {
     max-width: 82px;
   }
-  a:nth-child(2){
-    max-width: 130px;
+
+  a:nth-child(2) {
+    max-width: 170px;
     padding: 0 24px;
     border-left: 1px solid #C4C4C4;
     border-right: 1px solid #C4C4C4;
     margin: 0 24px;
   }
-  a:nth-child(3){
-    max-width: 100px;
+
+  a:nth-child(3) {
+    max-width: 90px;
   }
 }

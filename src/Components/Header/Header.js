@@ -1,5 +1,7 @@
 import React from "react";
+//styles
 import './Header.scss';
+//elemets
 import Logo from "../../Elements/HeaderElements/Logo/Logo";
 import CategoryDropDown from "../../Elements/HeaderElements/CategoryDropDown/CategoryDropDown";
 import LanguageChange from "../../Elements/HeaderElements/LanguageChange/LanguageChange";
