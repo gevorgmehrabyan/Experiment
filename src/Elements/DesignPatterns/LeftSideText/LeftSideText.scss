@@ -1,0 +1,28 @@
+.left_pic_wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  img{
+    width: 100%;
+  }
+
+  div{
+    width: 368px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 45px 30px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #006EBE;
+    position: absolute;
+    left: 10%;
+    margin-top: 10%;
+  }
+}

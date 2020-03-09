@@ -3,15 +3,21 @@ import React from "react";
 import './CustomerReviewThankYou.scss';
 //elements
 import CustomerChooses from "../../../Elements/CustomerChooses/CustomerChooses";
+import { connect } from "react-redux";
 
-const CustomerReviewsThankYou = () => {
+const CustomerReviewsThankYou = (props) => {
     return (
         <div className='customer_rewies_thank_you'>
-            <h1>Thank you for Your review.
-                We appriciate that you’ve spent time to help us as well as our customers.</h1>
+            <h1>{props.customerReviewsThankYou}</h1>
             <CustomerChooses/>
         </div>
     );
 }
 
-export default CustomerReviewsThankYou;
+const mapStateToProps = (state) => {
+    return {
+        customerReviewsThankYou: state.otherpages.customerReviewsThankYou
+    }
+}
+
+export default connect(mapStateToProps)(CustomerReviewsThankYou); 

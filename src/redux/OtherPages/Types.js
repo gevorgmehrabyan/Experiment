@@ -1,0 +1,1 @@
+export const GET_OTHERPAGES = 'GET_OTHERPAGES';

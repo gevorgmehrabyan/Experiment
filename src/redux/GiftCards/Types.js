@@ -1,0 +1,1 @@
+export const GET_GIFTCARDS = 'GET_GIFTCARDS';

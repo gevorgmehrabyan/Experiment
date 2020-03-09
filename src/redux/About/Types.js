@@ -1,0 +1,1 @@
+export const GET_ABOUTCONTENT = 'GET_ABOUTCONTENT';

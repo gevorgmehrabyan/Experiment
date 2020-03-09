@@ -1,0 +1,1 @@
+export const GET_CAREERS = "GET_CAREERS";

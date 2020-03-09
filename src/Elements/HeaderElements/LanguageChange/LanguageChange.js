@@ -1,12 +1,13 @@
 import React, {useState} from "react";
 import {Dropdown, Radio, Menu } from "antd";
 import './LanguageChange.scss';
+import { connect } from "react-redux";
 
 const LanguageChange = (props) => {
-    const [value , setValue] = useState(1);
-    const onChange = e => {
-        setValue(e.target.value)
-    };
+    const {langs, currentLang} = props;
+    const handleChange = e => {
+        props.change(e.target.value)
+    }
     const radioStyle = {
         display: 'block',
         height: '30px',
@@ -15,16 +16,12 @@ const LanguageChange = (props) => {
     const menu = (
         <Menu>
             <div className='romb'></div>
-            <Radio.Group onChange={onChange} value={value}>
-                <Radio style={radioStyle} value={1}>
-                    English
-                </Radio>
-                <Radio style={radioStyle} value={2}>
-                    Russian
-                </Radio>
-                <Radio style={radioStyle} value={3}>
-                    Armenian
-                </Radio>
+            <Radio.Group onChange={handleChange} value={currentLang}>
+                {
+                    langs.map( (item, index) => {
+                        return <Radio key={index} style={radioStyle} value={item.lang}>{item.name}</Radio>
+                    })
+                }
             </Radio.Group>
         </Menu>
     );
@@ -32,7 +29,7 @@ const LanguageChange = (props) => {
         <div className='language_change'>
             <Dropdown placement="bottomLeft" overlay={menu} trigger={['click']}>
                 <a className="ant-dropdown-link" href="#">
-                    EN
+                    {currentLang}
                 </a>
             </Dropdown>
         </div>
@@ -40,4 +37,17 @@ const LanguageChange = (props) => {
     );
 }
 
-export default LanguageChange;
+const mapStateToProps = (state) => {
+    return {
+        langs: state.changelanguage.langs,
+        currentLang: state.changelanguage.currentLang
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        change: (id) => {dispatch({ type: 'CHANGE_LANGUAGE', payload: id})},
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(LanguageChange); 

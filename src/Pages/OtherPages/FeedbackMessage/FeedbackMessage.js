@@ -3,15 +3,22 @@ import React from "react";
 import './FeedbackMessage.scss';
 //elements
 import PurchaseChooses from "../../../Elements/PurchaseChooses/PurchaseChooses";
+import { connect } from "react-redux";
 
-const FeedbackMessage = () => {
+const FeedbackMessage = (props) => {
     return(
         <div className='feedback_message'>
             <h1>Thank you for your feedback!</h1>
-            <p>We appriciate that you spend your time to hel us improve our website.</p>
+            <p>{props.feedbackMessage}</p>
             <PurchaseChooses/>
         </div>
     );
 }
 
-export default FeedbackMessage;
+const mapStateToProps = (state) => {
+    return {
+        feedbackMessage: state.otherpages.feedbackMessage
+    }
+}
+
+export default connect(mapStateToProps)(FeedbackMessage); 

@@ -1,0 +1,107 @@
+.order__list__item{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 0 ;
+  border-bottom: 1px solid #B4B4B4;
+  h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 8px 0 12px 0 !important;
+  }
+  span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+  }
+
+  .name__description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35%;
+    img{
+      margin-right: 16px;
+    }
+  }
+
+  .name__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p{
+      max-width: 270px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 23px;
+      color: #000000;
+      margin: 0 !important;
+    }
+
+    a{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #006EBE;
+    }
+  }
+
+  .column__div{
+    display: flex;
+    flex-direction: column;
+    button{
+      width: 128px;
+      height: 40px;
+      border: 1px solid #041E42;
+      background: #FFFFFF;
+      border-radius: 20px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #041E42;
+      outline: none;
+      cursor: pointer;
+    }
+    button:nth-child(1):hover{
+      color: #FFFFFF;
+      background: #041E42;
+    }
+    button:nth-child(2){
+      color: #FFFFFF;
+      background: #3EC5E6;
+      margin: 16px 0 8px 0;
+      border: none;
+    }
+    button:nth-child(2):hover{
+      background: #08ABD3;
+    }
+    button:nth-child(2):focus{
+      background: #08ABD3;
+      box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .not__available{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 14px;
+      color: #FF0009;
+      text-align: center;
+    }
+  }
+}

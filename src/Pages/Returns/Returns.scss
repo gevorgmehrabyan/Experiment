@@ -1,0 +1,27 @@
+.return{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .return__main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 64px 0 48px;
+  }
+
+  .for_questions{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #656565;
+    margin-top: 48px;
+    a{
+      text-decoration: underline;
+    }
+  }
+}

@@ -7,7 +7,6 @@
 }
 
 .contacts_container {
-
   flex-direction: column;
 }
 
@@ -37,8 +36,6 @@
     margin-left: 8px;
   }
 }
-
-
 
 .contacts_top_left {
   display: flex;
@@ -85,6 +82,9 @@
   flex-direction: column;
   padding-left: 6%;
   border-left: 1px solid #929292;
+  iframe{
+    border: none !important;
+  }
 }
 
 .contacts_bottom {

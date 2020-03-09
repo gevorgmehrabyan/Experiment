@@ -1,0 +1,120 @@
+.careers{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .careers__main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 64px 0 48px;
+
+    .ant-tabs{
+      margin-top: 56px;
+    }
+
+    .ant-tabs-bar{
+      border: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0 0 48px 0 !important;
+    }
+
+    .tab__header__style{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 28px 0 28px 48px;
+      border-bottom: 1px solid #C4C4C4;
+      border-right: 1px solid #C4C4C4;
+      p{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: #656565;
+        margin: 0 0 0 24px !important;
+      }
+    }
+
+    .ant-tabs-nav .ant-tabs-tab{
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 33.3%;
+    }
+
+    .ant-tabs-tab-active{
+      p{
+        font-weight: bold;
+        color: #006EBE;
+      }
+      path{
+        fill: #006EBE;
+      }
+    }
+
+    .ant-tabs-nav{
+      width: 100%;
+      display: flex !important;
+    }
+
+    .ant-tabs-ink-bar{
+      display: none !important;
+    }
+
+
+
+    .ant-tabs-nav-scroll{
+      overflow: initial !important;
+    }
+
+    .ant-tabs-tab-prev{
+      display: none;
+    }
+
+    .ant-tabs-tab-next{
+      display: none;
+    }
+
+    .ant-tabs-nav-container-scrolling{
+      padding: 0 !important;
+    }
+
+    .ant-tabs-nav-container{
+      overflow: initial;
+      width: 100%;
+    }
+
+    .ant-tabs-nav-wrap{
+      overflow: initial !important;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab{
+      height: auto;
+    }
+
+    div.ant-tabs-nav-animated > *{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+  }
+  .for_questions{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #656565;
+    margin-top: 48px;
+    a{
+      text-decoration: underline;
+    }
+  }
+}

@@ -7,58 +7,20 @@ import HomeProduct from "../../Elements/HomeProduct/HomeProduct";
 import HomeProducts from "../../Components/HomeProducts/HomeProducts";
 //images
 import Slider from "../../Components/Sliders/Slider";
-import slide1 from '../../Assets/images/slide1.png';
-import slide2 from '../../Assets/images/slide2.png';
-import slide3 from '../../Assets/images/slide3.png';
-import slide4 from '../../Assets/images/slide4.png';
-import home_item from '../../Assets/images/home_item.png';
-import mobile_item from '../../Assets/images/mobile_item.png';
-import auto_item from '../../Assets/images/auto_item.png';
-import elect_item from '../../Assets/images/elect_item.png';
+import {connect} from "react-redux";
 
-
-function Home() {
-    const sliderList = [
-        {image: slide1, name: 'HOTOR Stand for Iphone', price: '$31.50'},
-        {image: slide2, name: 'Lesco Domestic 232V Adaptor ', price: '$4.45'},
-        {image: slide3, name: 'Solimo mobile cover', price: '$10.50'},
-        {image: slide4, name: 'ADAS 7.84 Dash Cam', price: '$244.45'}
-    ];
-    const homeProdList = [
-        {image: home_item, name: 'HOTOR Stand for Iphone', price: '$31.50'},
-        {image: home_item, name: 'Lesco Domestic 232V Adaptor ', price: '$4.45'},
-        {image: home_item, name: 'Solimo mobile cover', price: '$10.50'},
-        {image: home_item, name: 'ADAS 7.84 Dash Cam', price: '$244.45'}
-    ];
-    const autoProdList = [
-        {image: auto_item, name: 'HOTOR Stand for Iphone', price: '$31.50'},
-        {image: auto_item, name: 'Lesco Domestic 232V Adaptor ', price: '$4.45'},
-        {image: auto_item, name: 'Solimo mobile cover', price: '$10.50'},
-        {image: auto_item, name: 'ADAS 7.84 Dash Cam', price: '$244.45'}
-    ];
-    const electProdList = [
-        {image: elect_item, name: 'HOTOR Stand for Iphone', price: '$31.50'},
-        {image: elect_item, name: 'Lesco Domestic 232V Adaptor ', price: '$4.45'},
-        {image: elect_item, name: 'Solimo mobile cover', price: '$10.50'},
-        {image: elect_item, name: 'ADAS 7.84 Dash Cam', price: '$244.45'}
-    ];
-    const mobileProdList = [
-        {image: mobile_item, name: 'HOTOR Stand for Iphone', price: '$31.50'},
-        {image: mobile_item, name: 'Lesco Domestic 232V Adaptor ', price: '$4.45'},
-        {image: mobile_item, name: 'Solimo mobile cover', price: '$10.50'},
-        {image: mobile_item, name: 'ADAS 7.84 Dash Cam', price: '$244.45'}
-    ];
-    const slider = sliderList.map((item, index) => {
+function Home(props) {
+    const slider = props.sliderList.map((item, index) => {
         return <HomeProduct key={index} item={item}/>;
     });
     return (
         <div className='global_page'>
             <BannersSlider />
             <div className='container under_slider'>
-                <HomeProducts title={'For home'} items={homeProdList}/>
-                <HomeProducts title={'For automobiles'} items={autoProdList}/>
-                <HomeProducts title={'Electronics'} items={electProdList}/>
-                <HomeProducts title={'For mobile'} items={mobileProdList}/>
+                <HomeProducts title={'For home'} items={props.homeProdList}/>
+                <HomeProducts title={'For automobiles'} items={props.autoProdList}/>
+                <HomeProducts title={'Electronics'} items={props.electProdList}/>
+                <HomeProducts title={'For mobile'} items={props.mobileProdList}/>
                 <hr className='global_devider1'/>
                 <h1 className='title_style'>You’ve checked those out</h1>
                 <Slider children={slider}/>
@@ -70,4 +32,21 @@ function Home() {
     );
 }
 
-export default Home;
+const mapStateToProps = ( state ) => {
+    return {
+        homeProdList: state.home.homeProdList,
+        autoProdList: state.home.autoProdList,
+        electProdList: state.home.electProdList,
+        mobileProdList: state.home.mobileProdList,
+        sliderList: state.home.sliderList
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+
+    }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
